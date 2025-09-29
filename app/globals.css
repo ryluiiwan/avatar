@@ -1,8 +1,11 @@
+/*
+  The following Tailwind directives require processing by Tailwind CLI or a compatible build tool.
+  Make sure your build process includes Tailwind CSS to handle these.
+*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
+``` :root {
   --background: #ffffff;
   --foreground: #171717;
 }

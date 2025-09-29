@@ -104,6 +104,12 @@ export default function AvatarGenerator() {
       // 创建canvas来转换图片格式
       const canvas = document.createElement("canvas");
       const ctx = canvas.getContext("2d");
+
+      if (!ctx) {
+        console.error("无法获取 canvas context");
+        return;
+      }
+
       const img = document.createElement("img"); // 使用 document.createElement 而不是 new Image()
 
       img.onload = () => {
